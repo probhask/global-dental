@@ -1,0 +1,16 @@
+export const treatmentList = [
+  "Advance Gum Treatments",
+  "Clear Aligners",
+  "Dentures",
+  "Preventive Dentistry",
+  "Teeth Whitening",
+  "Bridges and Crowns",
+  "Dental Fillings",
+  "Mouth Ulcers",
+  "Root Canal Treatments",
+  "Wisdom Teeth Removal",
+  "Braces and Aligners",
+  "dental Implants",
+  "Kids Dentistry",
+  "Smile Makeover",
+];

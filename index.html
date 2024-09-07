@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNUBUNDL TASK</title>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles/largeDevices.css" />
+  <link rel="stylesheet" href="styles/mediumDevices.css" />
+  <link rel="stylesheet" href="styles/smallDevices.css" />
+  <link rel="stylesheet" href="styles/mobile.css" />
+</head>
+
+<body>
+  <!-- ========== Start chat bot icon ========== -->
+  <div class="chat-icon-div">
+    <img src="assets/chat.svg" alt="" />
+  </div>
+  <!-- ========== End chat bot icon ========== -->
+
+  <!-- ========== Start header absolute elements ========== -->
+
+  <!-- ========== Start treatment link section ========== -->
+  <div id="treatment-section" class="container navbar-absolute">
+    <template id="treatment-template">
+      <div class="treatment-box">
+        <p>treatment name</p>
+        <span>
+          <img src="assets/right-arrow.svg" alt="" class="treatment-arrow-img" />
+        </span>
+      </div>
+    </template>
+    <div class="treatment-btn">
+      <button>Need help? Call Clove Dental</button>
+    </div>
+  </div>
+  <!-- ========== End treatment link section ========== -->
+
+  <!-- ========== Start help contact ========== -->
+  <div id="help-contact-section" class="navbar-absolute help-contact-section ">
+    <div class="help-contact-box">
+      <div class="contact">
+        <h6>North India</h6>
+        <p>+91123456789</p>
+      </div>
+      <div class="icon-wrap"><img src="assets/phone.svg" alt="" class="contact-con"></img></div>
+    </div>
+    <div class="help-contact-box">
+      <div class="contact">
+        <h6>South India</h6>
+        <p>+91123456789</p>
+      </div>
+      <div class="icon-wrap"><img src="assets/phone.svg" alt="" class="contact-con"></div>
+    </div>
+    <div class="help-contact-box">
+      <div class="contact">
+        <h6>Mail Us</h6>
+        <p>clove@clovedental.in</p>
+      </div>
+      <div class="icon-wrap"><img src="assets/mail.png" alt="" class="contact-con"></div>
+    </div>
+  </div>
+  <!-- ========== End help contact ========== -->
+
+  <!-- ========== Start menu  ========== -->
+  <div class="menu-container-wrapper">
+    <div class="menu-container">
+      <div class="menu-logo">
+        <img src="assets/logo/globalDentalLogo.png" alt="" />
+        <div class="close-menu">X</div>
+      </div>
+      <ul class="menu-list">
+        <li class="menu-items more-menu">
+          <div class="more-menu-item item">
+            <span>Treatment</span>
+            <span><img src="assets/angle-down-orange.svg" alt="" /></span>
+          </div>
+          <ul class="sub-menu">
+            <li class="sub-menu-items item">Lorem, ipsum.</li>
+            <li class="sub-menu-items item">Lorem, ipsum.</li>
+            <li class="sub-menu-items item">Lorem, ipsum.</li>
+            <li class="sub-menu-items item">Lorem, ipsum.</li>
+            <li class="sub-menu-items item">Lorem, ipsum.</li>
+            <li class="sub-menu-items item">Lorem, ipsum.</li>
+          </ul>
+        </li>
+        <li class="menu-items item">Dental Plans</li>
+        <li class="menu-items item">Our Doctors</li>
+        <li class="menu-items item">Careers</li>
+        <li class="menu-items item">Find a Clinic</li>
+        <li class="menu-items item book-appointment-btn" id="book-appointment-menu">
+          Book Appointment
+        </li>
+        <li class="menu-items item help-contact" id="help-contact-menu">Help?</li>
+      </ul>
+    </div>
+  </div>
+  <!-- ========== End menu  ========== -->
+  
+  <!-- ========== Start book Appointment ========== -->
+  <div class="book-appointment-section navbar-absolute" id="book-appointment-section">
+    <div class=" appointment-form form-1">
+      <div class="content">
+        <h6>Book your consultation at Clove Dental</h6>
+        <p>Please fill out the form below to book consultation at Clove Dental</p>
+      </div>
+      <h5 class="step-heading">
+        Step 1. Personal Details
+      </h5>
+      <div class="form-elements-div">
+        <div class="form-input">
+          <div class="form-element"><input type="text" placeholder="name" name="name" id=""></div>
+          <div class="form-element"><input type="text" placeholder="email" name="email" id=""></div>
+          <div class="form-element"><input type="text" placeholder="mobile" name="mobile" id=""></div>
+          <div class="form-element otp-div"><input type="text" placeholder="enter OTP" name="otp" id=""> <button
+              class="otp-btn">Verify</button></div>
+        </div>
+        <div class="form-submit-btn-div" id="form-next-btn">
+          <button>Next</button>
+        </div>
+      </div>
+    </div>
+    <div class=" appointment-form form-2">
+      <h5 class="step-heading">
+        Step 2. Appointment Details
+      </h5>
+      <div class="form-elements-div">
+        <div class="form-input">
+          <div class="form-element">
+            <input type="text" placeholder="Select City" name="city" id="">
+            <span>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+          <div class="form-element">
+            <input type="text" placeholder="Select Clinic" name="clinic" id="">
+            <span>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+          <div class="form-element">
+            <input type="text" placeholder="Select Date & Time" name="time" id="">
+            <span>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+          <div class="form-element">
+            <input type="text" placeholder="Select Concern" name="concern" id="">
+            <span>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+        </div>
+        <div class="info">
+          <input type="checkbox" name="" id="">
+          <p>I hereby consent to receive communication from Clove Dental regarding my appointment and other dental services.</p>
+        </div>
+        <div class="form-submit-btn-div" id="form-submit-btn">
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  <!-- ========== End book Appointment ========== -->
+
+  <!-- ========== End header absolute elements ========== -->
+
+
+  <!-- ========== Start header ========== -->
+  <header class="">
+    <div class="header-section container">
+      <!-- logo -->
+      <div class="logo-img">
+        <img src="assets/logo/globalDentalLogo.png" alt="" />
+      </div>
+
+      <!-- nav links -->
+      <nav>
+        <ul class="nav-link">
+          <li class="link expand-link" id="treatment-nav-link">
+            <span>Treatment</span>
+            <img src="assets/angle-down-orange.svg" alt="angle-down" />
+          </li>
+          <span>|</span>
+
+          <li class="link expand-link" id="dental-plans-nav-link">
+            <span>Dental Plans</span>
+            <img src="assets/angle-down-orange.svg" alt="angle-down" />
+          </li>
+          <span>|</span>
+
+          <li class="link">
+            <span>Our Doctors</span>
+          </li>
+          <span>|</span>
+
+          <li class="link">
+            <span>Careers</span>
+          </li>
+          <span>|</span>
+
+          <li class="link">
+            <span>Find a Clinic</span>
+          </li>
+        </ul>
+      </nav>
+      <!-- extra button -->
+      <div class="extra-btn">
+        <div class="appointment book-appointment-btn" id="book-appointment-btn">
+          <img src="assets/Bookappointment.svg" alt="appointment-book" />
+          <span>Book Appointment</span>
+        </div>
+        <div class="help help-contact" id="help-contact">
+          <img src="assets/phone.svg" alt="phone" />
+          <span>Help?</span>
+          <img src="assets/angle-down-black.svg" alt="angle-down" />
+        </div>
+      </div>
+      <div class="menu-icon-btn" id="menu-icon-btn">
+        <div class="menu-icon-line"></div>
+        <div class="menu-icon-line"></div>
+        <div class="menu-icon-line"></div>
+      </div>
+    </div>
+  </header>
+  <!-- ========== End header ========== -->
+
+  <!-- ========== Start main section ========== -->
+  <main>
+    <!-- ========== Start hero banner section ========== -->
+    <section class="hero-banner no-scrollbar" id="hero-banner">
+      <!-- first banner -->
+      <div class="first-banner banner container">
+        <div class="left-hero-banner">
+          <h2>Advance Dental Health Plan</h2>
+          <div>
+            <h6>Dental care worth &#8377;8,000/-</h6>
+            <h5>only at &#8377;5500</h5>
+          </div>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="img-banner">
+          <img src="assets/banner1.svg" alt="" />
+        </div>
+      </div>
+      <!-- second banner -->
+      <div class="second-banner banner container">
+        <div class="left-hero-banner">
+          <h2>Advance Dental Health Plan</h2>
+          <div>
+            <h6>Dental care worth &#8377;8,000/-</h6>
+            <h5>only at &#8377;5500</h5>
+          </div>
+          <button class="buy-now">Buy Now</button>
+        </div>
+        <div class="img-banner">
+          <img src="assets/banner1.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- scroll tab navigation -->
+      <div class="banner-scroll-tab">
+        <div class="banner-tab active-tab"></div>
+        <div class="banner-tab"></div>
+      </div>
+    </section>
+    <!-- ========== End hero banner section ========== -->
+
+    <!-- ========== Start quick info ========== -->
+    <section class="quick-info container scroll-animation">
+      <div class="quick-info-left">
+        <h3><span class="24x7">24x7</span><span>Patient Helpline</span></h3>
+        <p>Managed by 40+ Doctors, 5+ Languages supported</p>
+      </div>
+      <div class="quick-info-right">
+        <!-- google rating -->
+        <div class="google-rating">
+          <div class="google-icon">
+            <img src="assets/google.svg" alt="" />
+          </div>
+          <div class="google-content">
+            <div>
+              <img src="assets/star.svg" alt="" />
+              <span>4.9/5</span>
+            </div>
+            <h6>1.7 Lakh+</h6>
+            <p>Verified Smiles on Google</p>
+          </div>
+        </div>
+        <!-- find location -->
+        <div class="find-location">
+          <div class="location-input">
+            <input type="text" placeholder="select your city" name="" id="lication-input-box" />
+            <!-- down angle -->
+            <img src="assets/angle-down-orange.svg" alt="down-angle" />
+          </div>
+          <button>Locate nearest Clove clinic</button>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End quick info ========== -->
+
+    <!-- ========== Start issue and contact ========== -->
+    <section class="container treatment-container">
+      <!-- ========== Start dental issue ========== -->
+      <section class="dental-issue-container scroll-animation">
+        <p>
+          All dental issues from simple cleaning to full mouth rehabilitation
+          under one roof
+        </p>
+        <!-- dental issue list -->
+        <div class="dental-issue-list">
+          <script type="module" src="dentalIssue.js"></script>
+          <template id="dental-issue-template">
+            <div class="dental-issue">
+              <div class="issue-img-wrapper">
+                <img src="" alt="" class="dental-issue-img scroll-animation" />
+              </div>
+              <p class="issue-title">Root Canal Treatment</p>
+            </div>
+          </template>
+        </div>
+        <!-- explore treatment -->
+        <div class="explore-treatment-container">
+          <div class="explore-treatment">
+            <img src="assets/Search.svg" alt="search-icon" />
+            <a href="#">Explore Treatments</a>
+            <img src="assets/right-arrow.svg" alt="right-arrow" />
+          </div>
+        </div>
+      </section>
+      <!-- ========== End dental issue ========== -->
+
+      <!-- ========== Start grid info section ========== -->
+      <section class="grid-extra-container scroll-animation">
+        <div class="contact-grid">
+          <div class="heading">
+            <h3>Expert Guidance for Healthy Smiles</h3>
+            <h6>Contact Now</h6>
+          </div>
+          <form class="contact-form">
+            <fieldset class="name-fieldset">
+              <legend>Name</legend>
+              <input type="text" name="name" id="contact-name" />
+            </fieldset>
+            <input type="text" name="number" id="contact-number" />
+            <!-- dropdown -->
+            <select name="" id="">
+              <option value="">hello</option>
+              <option value="">hello</option>
+            </select>
+            <!-- button -->
+            <button type="button">Book A Free Consultation</button>
+          </form>
+        </div>
+        <div class="appreciation-grid">
+          <div class="safety-protocol">
+            <div class="protocol-content">
+              <div>
+                <h3>10x Safety Protocols</h3>
+                <div>
+                  <p>Monitored by <span>DORI</span></p>
+                  <p>(Artificial Intelligence System)</p>
+                </div>
+              </div>
+              <a href=""><span> Learn More </span>
+                <img src="assets/right-arrow-brown.svg" alt="" /></a>
+            </div>
+            <div class="protocol-img">
+              <img src="assets\safetyprotocolgirl.png" alt="" />
+            </div>
+          </div>
+          <div class="bottom-safety-protocol">
+            <div class="neighborhood">
+              <div class="bottom-safety-content">
+                <h3>450+ Neighborhood</h3>
+                <p>Clinics Pan India</p>
+              </div>
+              <div class="bottom-safety-img">
+                <img src="assets/neighbourhood.svg" alt="" />
+              </div>
+              <p class="bottom-safety-explore-link">
+                <a href="">Locate Clinic near you</a>
+                <img src="assets/right-arrow.svg" alt="right-arrow" />
+              </p>
+            </div>
+            <div class="expert-doctor">
+              <div class="bottom-safety-content">
+                <h3>1200+ Expert Doctors</h3>
+                <p>Covering All Specialties</p>
+              </div>
+              <div class="bottom-safety-img">
+                <img src="assets\expertdooctor.svg" alt="" />
+              </div>
+              <p class="bottom-safety-explore-link">
+                <a>Explore Dentists Nearby</a>
+                <img src="assets/right-arrow.svg" alt="right-arrow" />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ========== End grid info section ========== -->
+    </section>
+    <!-- ========== End issue and contact ========== -->
+
+    <!-- ========== Start people words ========== -->
+    <section class="people-word container scroll-animation">
+      <h2>In their Own Words</h2>
+      <div id="people-list" class="no-scrollbar">
+        <script type="module" src="peopleWord.js"></script>
+        <template id="people-word-template">
+          <div class="people">
+            <div class="people-img-div">
+              <img src="" alt="" class="people-img" />
+            </div>
+            <div class="info">
+              <p class="info-title">name</p>
+              <p class="info-treatment">treatment</p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!-- ========== End people words ========== -->
+
+    <!-- ========== Start service scroll section ========== -->
+    <section class="service-section scroll-animation">
+      <div class="service-section-container">
+        <!-- service -->
+        <div class="service-first-box">
+          <h5>Unmatched Dental Excellence by 1200+ Specialists</h5>
+
+          <div class="appreciate-box">
+            <div class="appreciate">
+              <div class="icon">
+                <img src="assets/service/1.svg" alt="" />
+              </div>
+              <div class="content">
+                <p>Team of Specialist</p>
+                <p><span class="content-orange">75+</span> Orthodontists</p>
+              </div>
+            </div>
+
+            <div class="appreciate">
+              <div class="icon">
+                <img src="assets/service/2.svg" alt="" />
+              </div>
+              <div class="content">
+                <p>Leading with</p>
+                <p><span class="content-orange">80%</span> women</p>
+              </div>
+            </div>
+
+            <div class="appreciate">
+              <div class="icon">
+                <img src="assets/service/3.svg" alt="" />
+              </div>
+              <div class="content">
+                <p>Doctors for specialized care</p>
+                <p><span class="content-orange">65%</span> MDS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- doctors -->
+        <div class="doctor-container">
+          <div id="service-doctors-list" class="no-scrollbar">
+            <script type="module" src="serviceDoctor.js"></script>
+            <template id="service-doctor-template">
+              <div class="service-doctor">
+                <div class="doctor-img-div">
+                  <img src="assets/service/1.svg" alt="" class="doctor-img" />
+                </div>
+                <div class="doctor-data">
+                  <p class="doctor-name">Name</p>
+                  <p class="doctor-experience">experience</p>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div class="meet-doctor-button">
+            <button>Meet Our Doctors</button>
+          </div>
+        </div>
+      </div>
+      <!-- scroll service -->
+      <div class="scroll-service-container no-scrollbar">
+        <div class="scroll-display scroll-service-content no-scrollbar service-scroll-mobile-hide">
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/1.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">20 L+</span>
+              Happy Patients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/2.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">12,000 +</span>
+              Dentist
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/3.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">450 +</span>
+              Clients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/4.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">7 Days</span>
+              Open
+            </div>
+          </div>
+        </div>
+        <div class="scroll-display scroll-service-content no-scrollbar scroll-service-content-second">
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/1.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">20 L+</span>
+              Happy Patients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/2.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">12,000 +</span>
+              Dentist
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/3.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">450 +</span>
+              Clients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/4.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">7 Days</span>
+              Open
+            </div>
+          </div>
+        </div>
+        <div class="scroll-display scroll-service-content no-scrollbar scroll-service-content-third">
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/1.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">20 L+</span>
+              Happy Patients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/2.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">12,000 +</span>
+              Dentist
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/3.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">450 +</span>
+              Clients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/4.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">7 Days</span>
+              Open
+            </div>
+          </div>
+        </div>
+        <div class="scroll-display scroll-service-content no-scrollbar scroll-service-content-fourth service-scroll-mobile-hide">
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/1.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">20 L+</span>
+              Happy Patients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/2.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">12,000 +</span>
+              Dentist
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/3.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">450 +</span>
+              Clients
+            </div>
+          </div>
+          <div class="scroll-service">
+            <div class="service-icon">
+              <img src="assets/scrollservice/4.svg" alt="" class="service-icon-img" />
+            </div>
+            <div class="service-info">
+              <span class="orange-text">7 Days</span>
+              Open
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End service scroll section ========== -->
+
+    <!-- ========== Start equipment list ========== -->
+    <section class="equipment-section no-scrollbar scroll-animation" id="equipment-section">
+      <script type="module" src="equipment.js"></script>
+      <template id="equipment-block-template">
+        <div class="equipment-block">
+          <div class="equipment-img-div">
+            <img src="assets/equipment/2.png" alt="" class="equip-img" />
+          </div>
+
+          <div class="equipment-data">
+            <h3 class="equip-heading">heading</h3>
+            <p class="equip-para">paragraph</p>
+            <a href="#equipment-section">
+              <span>Learn More</span>
+              <img src="assets/Search.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </template>
+    </section>
+    <!-- ========== End equipment list ========== -->
+
+    <!-- ========== Start blog list ========== -->
+
+    <!-- ========== End blog list ========== -->
+
+    <!-- ========== Start company partner customer ========== -->
+
+    <section class="partner-section container scroll-animation" id="partner-section container">
+      <div class="partners-greeting-bg-img">
+        <img src="assets/brand/bg.png" alt="" />
+      </div>
+      <div class="brand-div">
+        <div class="brand-content">
+          <h4>250+</h4>
+          <h6>Corporate Trust Us</h6>
+          <p>
+            Check if your company is one of them & avail exclusive benefits
+          </p>
+        </div>
+        <div class="brand-list-container scroll-animation">
+          <div class="brand-list">
+            <img src="assets/brand/6.png" alt="" class="brand-img" />
+            <img src="assets/brand/7.png" alt="" class="brand-img" />
+            <img src="assets/brand/8.png" alt="" class="brand-img" />
+            <img src="assets/brand/9.png" alt="" class="brand-img" />
+            <img src="assets/brand/10.png" alt="" class="brand-img" />
+            <img src="assets/brand/1.png" alt="" class="brand-img" />
+            <img src="assets/brand/2.png" alt="" class="brand-img" />
+            <img src="assets/brand/3.png" alt="" class="brand-img" />
+            <img src="assets/brand/4.png" alt="" class="brand-img" />
+            <img src="assets/brand/5.png" alt="" class="brand-img" />
+            <img src="assets/brand/6.png" alt="" class="brand-img" />
+            <img src="assets/brand/7.png" alt="" class="brand-img" />
+            <img src="assets/brand/8.png" alt="" class="brand-img" />
+            <img src="assets/brand/9.png" alt="" class="brand-img" />
+            <img src="assets/brand/10.png" alt="" class="brand-img" />
+            <img src="assets/brand/1.png" alt="" class="brand-img" />
+            <img src="assets/brand/2.png" alt="" class="brand-img" />
+            <img src="assets/brand/3.png" alt="" class="brand-img" />
+            <img src="assets/brand/4.png" alt="" class="brand-img" />
+            <img src="assets/brand/5.png" alt="" class="brand-img" />
+          </div>
+        </div>
+        <div class="brand-explore">
+          <button>Book Appointment</button>
+          <a href="#partner-section container">
+            Register your company
+            <img src="assets/right-arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End company partner customer ========== -->
+
+    <!-- ========== Start accomplishment ========== -->
+    <section class="accomplishment-section container scroll-animation">
+      <div class="head">
+        <h4>Beyond Dentistry</h4>
+        <h6>Mapping success in every area</h6>
+      </div>
+        <div class="accomplish-list">
+          <div class="accomplish-box">
+            <div class="img-box">
+              <img src="assets/dentistry/1.png" alt="" class="accomplish-box-img" />
+            </div>
+            <p class="accomplish-box-text">Educational Videos</p>
+          </div>
+          <div class="accomplish-box">
+            <div class="img-box">
+              <img src="assets/dentistry/2.png" alt="" class="accomplish-box-img" />
+            </div>
+            <p class="accomplish-box-text">New & Media</p>
+          </div>
+          <div class="accomplish-box">
+            <div class="img-box">
+              <img src="assets/dentistry/3.png" alt="" class="accomplish-box-img" />
+            </div>
+            <p class="accomplish-box-text">Rewards</p>
+          </div>
+          <div class="accomplish-box">
+            <div class="img-box">
+              <img src="assets/dentistry/4.png" alt="" class="accomplish-box-img" />
+            </div>
+            <p class="accomplish-box-text">Careers</p>
+          </div>
+        </div>
+    </section>
+    <!-- ========== End accomplishment ========== -->
+
+    <!-- ========== Start FAQ ========== -->
+    <section class="faq-section container">
+      <h4>Frequently Asked Questions</h4>
+      <div class="faq-container">
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+        <div class="faq-box">
+          <p>Can i choose the dentist on my own for treatment ?</p>
+          <div class="add-img">
+            <img src="assets/addplus.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End FAQ ========== -->
+  </main>
+  <!-- ========== End main section ========== -->
+
+  <!-- ========== Start footer ========== -->
+  <footer class="footer-section">
+    <div class="footer-container container">
+      <div class="footer-terms-container">
+        <div class="footer treatment footer-block">
+          <h4 class="footer-heading">Treatment</h4>
+          <div class="footer-points">
+            <p>Laser Dentistry</p>
+            <p>Dental Filling</p>
+            <p>Root Canal Treatment</p>
+            <p>Wisdom Teeth Removal</p>
+            <p>Braces & Aligners</p>
+            <p>Clear Aligner</p>
+            <p>Dental Implants</p>
+          </div>
+        </div>
+        <div class="footer-quick-links footer-block">
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-points">
+            <p>Home</p>
+            <p>Service</p>
+            <p>About Us</p>
+            <p>Location</p>
+            <p>Book Appointments</p>
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div class="footer-explore-clove footer-block">
+          <h4 class="footer-heading">Explore Clove</h4>
+          <div class="footer-points">
+            <p>Our Team</p>
+            <p>Clinic OverView</p>
+            <p>Testimonial</p>
+            <p>Blogs</p>
+            <p>News</p>
+          </div>
+        </div>
+        <div class="footer-legal footer-block">
+          <h4 class="footer-heading">Legals</h4>
+          <div class="footer-points">
+            <p>Privacy Policy</p>
+            <p>Terms of Services</p>
+            <p>Accessibility</p>
+          </div>
+        </div>
+        <div class="footer-connect-us">
+          <h4 class="footer-heading">Connect with us</h4>
+          <div class="social-icons-div">
+            <img src="assets/connectus/1.svg" alt="" class="social-icon" /><img src="assets/connectus/2.svg" alt=""
+              class="social-icon" /><img src="assets/connectus/3.svg" alt="" class="social-icon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo-div">
+        <img src="assets/logo/globalDentalLogo.png" alt="" />
+      </div>
+
+      <div class="footer-copyright">
+        <p>
+          All Rights Reserved - 2024, Clove Dental (a brand name of M/s. Star
+          Dental Centre Private Limited)
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End footer ========== -->
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>

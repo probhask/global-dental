@@ -1,0 +1,207 @@
+/* 990 tp 1100 */
+@media (max-width: 1100px) {
+  .container {
+    max-width: 1030px;
+  }
+
+  /***** header section *****/
+  .header-section {
+    font-size: 0.9rem;
+    padding-block: 16px;
+
+    .logo-img img {
+      height: 30px;
+      width: 100px;
+    }
+
+    .extra-btn {
+      gap: 9px;
+      & > div {
+        padding-inline: 4px;
+        font-size: 0.8rem;
+        padding-block: 6px;
+      }
+
+      :is(.appointment, .help) img:first-of-type {
+        width: 12px;
+        height: 17px;
+      }
+
+      .help img:last-of-type {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  }
+  /***** End header section *****/
+
+  /***** main section *****/
+
+  main {
+    margin-top: 67px;
+    /***** banner section *****/
+    .hero-banner {
+      min-height: calc(100vh - 9vh);
+
+      .banner {
+        padding-top: 1rem;
+        padding: 20px;
+        justify-content: flex-start;
+        position: relative;
+
+        .left-hero-banner {
+          width: 70%;
+          max-width: 70%;
+          flex-grow: 1;
+          z-index: 2;
+
+          & h2 {
+            font-size: 3.2rem;
+          }
+        }
+
+        .img-banner {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+        .img-banner img {
+          width: 500px;
+          height: 100%;
+          opacity: 0.7;
+        }
+      }
+    }
+    /***** End banner section *****/
+
+    /***** quick info *****/
+    .quick-info {
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+      .quick-info-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .quick-info-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 30px;
+
+        .google-rating {
+          justify-content: center;
+        }
+
+        .find-location {
+          width: 100%;
+          padding-left: 30px;
+
+          & > * {
+            max-width: 400px;
+          }
+        }
+      }
+    }
+    /***** End quick info *****/
+
+    /***** people word *****/
+    .people-word {
+      #people-list {
+        .people {
+          & .people-img-div {
+            .people-img {
+              width: 160px;
+              height: clamp(250px, 250px, 250px);
+              object-fit: cover;
+            }
+          }
+        }
+      }
+    }
+    /***** End people word *****/
+
+    /***** service section *****/
+    .service-section {
+      .service-section-container {
+        padding-left: 2rem;
+        .service-first-box {
+          h5 {
+            margin-bottom: 50px;
+          }
+          .appreciate {
+            &:not(:last-child) {
+              margin-bottom: 25px;
+            }
+          }
+        }
+        & .doctor-container {
+          & #service-doctors-list {
+            & .service-doctor {
+              & .doctor-img-div {
+                .doctor-img {
+                  width: 220px;
+                  height: 230px;
+                }
+              }
+            }
+          }
+          .meet-doctor-button {
+            button {
+              font-size: 1.1rem;
+              padding-inline: 4rem;
+            }
+          }
+        }
+      }
+    }
+    /***** End service section *****/
+
+    /***** equipment *****/
+    .equipment-section {
+      gap: 30px;
+      .equipment-block {
+        .equipment-img-div {
+          width: 700px;
+          height: 400px;
+
+          .equipment-img {
+            width: clamp(700px, 700px, 700px);
+            height: clamp(400px, 400px, 400px);
+          }
+        }
+      }
+    }
+    /***** End equipment *****/
+
+    /***** accomplish beyond dentistry section *****/
+    .accomplishment-section {
+      & .accomplish-list {
+        .accomplish-box {
+          width: clamp(160px, 240px, 240px);
+          height: clamp(150px, 150px, 150px);
+
+          .img-box {
+            img {
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+    /***** End accomplish beyond dentistry section *****/
+
+    /***** faq section *****/
+    .faq-section {
+      .faq-container {
+        font-size: 1.1rem;
+      }
+    }
+    /***** End faq section *****/
+  }
+  /***** End main section *****/
+}
