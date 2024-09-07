@@ -3,6 +3,10 @@
 ## Project Overview
 This project is a responsive single-page landing site for a dental clinic built with HTML, CSS, and JavaScript. The website provides an overview of services, a showcase of customer testimonials, and information about the dental clinic.
 
+### Deployed on GitHub Pages
+[Visit the Dental Clinic Website](https://probhask.github.io/global_dental/)
+
+
 ## Features
 - **Responsive Design**: Ensures the website looks great on all devices.
 - **Services Section**: Lists various dental services offered by the clinic.
