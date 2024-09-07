@@ -1,7 +1,7 @@
 export const issues = [
   {
     id: 1,
-    img: "/assets/dentalIssue/1.png",
+    img: "../assets/dentalIssue/1.png",
     treatment: "Root anal Treatment",
   },
   {
