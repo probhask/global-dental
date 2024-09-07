@@ -89,6 +89,10 @@ a:visited {
   -moz-transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   -ms-transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   -o-transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 .scroll-animation.active {
   opacity: 1;
@@ -1652,8 +1656,9 @@ main {
           height: 50px;
         }
         &:hover {
-          animation: none;
-          -webkit-animation: none;
+          /* animation: none;
+          -webkit-animation: none; */
+          animation-play-state: paused;
         }
         animation: scroll 10s linear infinite;
         -webkit-animation: scroll 10s linear infinite;
