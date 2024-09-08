@@ -178,6 +178,16 @@
     }
     /***** End equipment *****/
 
+    /***** company partner  *****/
+    .partner-section {
+      & .brand-div {
+        padding-block: 15px;
+        padding-inline: 20px;
+        bottom: -50%;
+      }
+    }
+    /***** End company partner  *****/
+
     /***** accomplish beyond dentistry section *****/
     .accomplishment-section {
       & .accomplish-list {

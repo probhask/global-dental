@@ -1232,6 +1232,15 @@ main {
           align-items: center;
           gap: 4px;
           text-decoration: underline;
+          a {
+            font-size: 0.9rem;
+            color: var(--color-footer-background);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            text-decoration: underline;
+          }
 
           img {
             width: 14px;
@@ -1840,6 +1849,7 @@ main {
 /***** End faq *****/
 
 /***** footer section *****/
+
 .footer-section {
   background: var(--color-footer-background);
   color: var(--color-text-light);
