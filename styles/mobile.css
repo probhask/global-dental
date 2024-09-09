@@ -21,6 +21,11 @@
       padding: 15px;
       gap: 14px;
 
+      .close-appointment-form-btn {
+        top: -16px;
+        right: 2px;
+      }
+
       & .content {
         h6 {
           font-size: 1.3rem;
@@ -136,6 +141,10 @@
         height: 40px;
         width: 150px;
       }
+      .menu-icon-btn {
+        width: 37px;
+        height: 28px;
+      }
     }
   }
   /***** End header section *****/
@@ -143,7 +152,7 @@
   main {
     /***** hero banner *****/
     .hero-banner {
-      min-height: calc(100vh - 65px);
+      min-height: calc(100vh - 55px);
 
       & .banner {
         align-items: flex-end;
@@ -162,7 +171,7 @@
         .img-banner img {
           width: 100%;
           height: 100%;
-          min-height: calc(100vh - 65px);
+          min-height: calc(100vh - 90px);
           min-width: 100%;
           /* opacity: 0.5; */
           object-fit: cover;
@@ -196,22 +205,25 @@
       padding-block: 30px;
       padding-inline: 20px;
 
+      & > p:first-of-type {
+        font-size: 1.5rem;
+      }
+
       .dental-issue-list {
         grid-template-columns: repeat(auto-fit, 150px);
+        row-gap: 20px;
+        column-gap: 10px;
       }
       .dental-issue {
-        min-width: 150px;
+        height: 120px;
         .issue-img-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
           & img {
-            width: 40px;
-            height: 40px;
+            width: 70px;
+            height: 50px;
           }
         }
         .issue-title {
-          font-size: 0.9rem;
+          font-size: 1rem;
           font-weight: 500;
         }
       }
@@ -244,9 +256,16 @@
           font-size: 1.3rem;
 
           & > * {
-            min-height: 35px;
-            padding: 6px 20px;
+            min-height: 50px;
             font-size: 1.1rem;
+            padding: 6px 20px;
+          }
+          #selected-concern {
+            height: 50px;
+            & input {
+              min-height: 35px;
+              font-size: 1.1rem;
+            }
           }
           .name-fieldset {
             min-height: 35px;
@@ -255,7 +274,7 @@
             }
             input {
               font-size: 1rem;
-              height: 16px;
+              height: 22px;
             }
           }
           button {

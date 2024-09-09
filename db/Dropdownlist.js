@@ -1,0 +1,27 @@
+export const locationsList = [
+  "Ahemdabad",
+  "Amritsar",
+  "Bengluru",
+  "Chandigarh",
+  "Chennai",
+  "Delhi",
+  "Faridabad",
+  "Gaziabad",
+  "Greater Noida",
+  "Gurgaon",
+  "Hyderbad",
+  "Jaipur",
+];
+export const concernList = [
+  "Root Canal",
+  "Braces",
+  "Teeth Whitening",
+  "Invisible Braces",
+  "Kids Dentistry",
+  "Crown & Bridges",
+  "Dental Implants",
+  "Smile Makeover",
+  "Wisdom Tooth",
+  "Laser Dentistry",
+  "Dentures",
+];

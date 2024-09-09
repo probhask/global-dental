@@ -24,14 +24,7 @@
 
   <!-- ========== Start treatment link section ========== -->
   <div id="treatment-section" class="container navbar-absolute">
-    <template id="treatment-template">
-      <div class="treatment-box">
-        <p>treatment name</p>
-        <span>
-          <img src="assets/right-arrow.svg" alt="" class="treatment-arrow-img" />
-        </span>
-      </div>
-    </template>
+    <!-- treatment template -->
     <div class="treatment-btn">
       <button>Call Global Dental</button>
     </div>
@@ -65,31 +58,31 @@
   <!-- ========== End help contact ========== -->
 
   <!-- ========== Start menu  ========== -->
-  <div class="menu-container-wrapper">
+  <div class="menu-container-wrapper stop-scroll">
     <div class="menu-container">
       <div class="menu-logo">
         <img src="assets/logo/globalDentalLogo.png" alt="" />
         <div class="close-menu">X</div>
       </div>
-      <ul class="menu-list">
+      <ul class="menu-list custom-scrollbar">
         <li class="menu-items more-menu">
           <div class="more-menu-item item">
             <span>Treatment</span>
             <span><img src="assets/angle-down-orange.svg" alt="" /></span>
           </div>
           <ul class="sub-menu">
-            <li class="sub-menu-items item">Lorem, ipsum.</li>
-            <li class="sub-menu-items item">Lorem, ipsum.</li>
-            <li class="sub-menu-items item">Lorem, ipsum.</li>
-            <li class="sub-menu-items item">Lorem, ipsum.</li>
-            <li class="sub-menu-items item">Lorem, ipsum.</li>
-            <li class="sub-menu-items item">Lorem, ipsum.</li>
+            <li class="sub-menu-items item">sub menu item</li>
+            <li class="sub-menu-items item">sub menu item</li>
+            <li class="sub-menu-items item">sub menu item</li>
+            <li class="sub-menu-items item">sub menu item</li>
+            <li class="sub-menu-items item">sub menu item</li>
+            <li class="sub-menu-items item">sub menu item</li>
           </ul>
         </li>
         <li class="menu-items item">Dental Plans</li>
-        <li class="menu-items item">Our Doctors</li>
-        <li class="menu-items item">Careers</li>
-        <li class="menu-items item">Find a Clinic</li>
+        <li class="menu-items item doctor-nav-link">Our Doctors</li>
+        <li class="menu-items item career-nav-link">Careers</li>
+        <li class="menu-items item clinic-nav-link" >Find a Clinic</li>
         <li class="menu-items item book-appointment-btn" id="book-appointment-menu">
           Book Appointment
         </li>
@@ -100,8 +93,10 @@
   <!-- ========== End menu  ========== -->
   
   <!-- ========== Start book Appointment ========== -->
-  <div class="book-appointment-section navbar-absolute" id="book-appointment-section">
+  <div class="book-appointment-section stop-scroll " id="book-appointment-section">
+    
     <div class=" appointment-form form-1">
+      <div class="close-appointment-form-btn">x</div>
       <div class="content">
         <h6>Book your consultation at Global Dental</h6>
         <p>Please fill out the form below to book consultation at Global Dental</p>
@@ -111,10 +106,10 @@
       </h5>
       <div class="form-elements-div">
         <div class="form-input">
-          <div class="form-element"><input type="text" placeholder="name" name="name" id=""></div>
-          <div class="form-element"><input type="text" placeholder="email" name="email" id=""></div>
-          <div class="form-element"><input type="text" placeholder="mobile" name="mobile" id=""></div>
-          <div class="form-element otp-div"><input type="text" placeholder="enter OTP" name="otp" id=""> <button
+          <div class="form-element"><input type="text" placeholder="Enter Name" name="name" id=""></div>
+          <div class="form-element"><input type="text" placeholder="Enter Email" name="email" id=""></div>
+          <div class="form-element"><input type="number" placeholder="Mobile Number" name="mobile" id=""></div>
+          <div class="form-element otp-div"><input type="text" placeholder="Enter OTP" name="otp" id=""> <button
               class="otp-btn">Verify</button></div>
         </div>
         <div class="form-submit-btn-div" id="form-next-btn">
@@ -123,6 +118,7 @@
       </div>
     </div>
     <div class=" appointment-form form-2">
+      <div class="close-appointment-form-btn">x</div>
       <h5 class="step-heading">
         Step 2. Appointment Details
       </h5>
@@ -184,17 +180,18 @@
           </li>
           <span>|</span>
 
-          <li class="link">
+          <li class="link doctor-nav-link"  >
+          <!-- <li class="link"  onclick="window.scrollTo('#service-section')"> -->
             <span>Our Doctors</span>
           </li>
           <span>|</span>
-
-          <li class="link">
+          
+          <li class="link career-nav-link">
             <span>Careers</span>
           </li>
           <span>|</span>
 
-          <li class="link">
+          <li class="link clinic-nav-link" >
             <span>Find a Clinic</span>
           </li>
         </ul>
@@ -261,8 +258,12 @@
     </section>
     <!-- ========== End hero banner section ========== -->
 
+
+
+    
+
     <!-- ========== Start quick info ========== -->
-    <section class="quick-info container scroll-animation">
+    <section class="quick-info container scroll-animation" id="find-location">
       <div class="quick-info-left">
         <h3><span class="24x7">24x7</span><span>Patient Helpline</span></h3>
         <p>Managed by 40+ Doctors, 5+ Languages supported</p>
@@ -283,11 +284,11 @@
           </div>
         </div>
         <!-- find location -->
-        <div class="find-location">
+        <div class="find-location" >
           <div class="location-input">
-            <input type="text" placeholder="select your city" name="" id="lication-input-box" />
+            <input type="text" placeholder="select your city" name="" disabled id="lication-input-box" />
             <!-- down angle -->
-            <img src="assets/angle-down-orange.svg" alt="down-angle" />
+            <img src="assets/angle-down-orange.svg" alt="down-angle" class="select-angle" />
           </div>
           <button>Locate nearest Global clinic</button>
         </div>
@@ -305,15 +306,8 @@
         </p>
         <!-- dental issue list -->
         <div class="dental-issue-list">
-          <script type="module" src="dentalIssue.js"></script>
-          <template id="dental-issue-template">
-            <div class="dental-issue">
-              <div class="issue-img-wrapper">
-                <img src="" alt="" class="dental-issue-img scroll-animation" />
-              </div>
-              <p class="issue-title">Root Canal Treatment</p>
-            </div>
-          </template>
+          <!-- dental issue template -->
+          
         </div>
         <!-- explore treatment -->
         <div class="explore-treatment-container">
@@ -333,17 +327,20 @@
             <h3>Expert Guidance for Healthy Smiles</h3>
             <h6>Contact Now</h6>
           </div>
+
+
           <form class="contact-form">
             <fieldset class="name-fieldset">
               <legend>Name</legend>
-              <input type="text" name="name" id="contact-name" />
+              <input type="text" name="name" id="contact-name"  placeholder="Enter Name"/>
             </fieldset>
-            <input type="text" name="number" id="contact-number" />
+            <input type="number" name="number" id="contact-number" placeholder="Mobile Number" />
             <!-- dropdown -->
-            <select name="" id="">
-              <option value="">hello</option>
-              <option value="">hello</option>
-            </select>
+            <div id="select-concern">
+              <input type="text" placeholder="Select Concern" name="" disabled  />
+              <!-- down angle -->
+              <img src="assets/angle-down-orange.svg" alt="down-angle" class="select-angle" />
+            </div>
             <!-- button -->
             <button type="button">Book A Free Consultation</button>
           </form>
@@ -403,25 +400,14 @@
     <section class="people-word container scroll-animation">
       <h2>In their Own Words</h2>
       <div id="people-list" class="no-scrollbar">
-        <script type="module" src="peopleWord.js"></script>
-        <template id="people-word-template">
-          <div class="people">
-            <div class="people-img-div">
-              <img src="" alt="" class="people-img" />
-            </div>
-            <div class="info">
-              <p class="info-title">name</p>
-              <p class="info-treatment">treatment</p>
-            </div>
-          </div>
-        </template>
+       <!-- people word template -->
       </div>
     </section>
     <!-- ========== End people words ========== -->
 
     <!-- ========== Start service scroll section ========== -->
-    <section class="service-section scroll-animation">
-      <div class="service-section-container">
+    <section class="service-section scroll-animation" id="service-section">
+      <div class="service-section-container container">
         <!-- service -->
         <div class="service-first-box">
           <h5>Unmatched Dental Excellence by 1200+ Specialists</h5>
@@ -462,18 +448,7 @@
         <!-- doctors -->
         <div class="doctor-container">
           <div id="service-doctors-list" class="no-scrollbar">
-            <script type="module" src="serviceDoctor.js"></script>
-            <template id="service-doctor-template">
-              <div class="service-doctor">
-                <div class="doctor-img-div">
-                  <img src="assets/service/1.svg" alt="" class="doctor-img" />
-                </div>
-                <div class="doctor-data">
-                  <p class="doctor-name">Name</p>
-                  <p class="doctor-experience">experience</p>
-                </div>
-              </div>
-            </template>
+           <!-- doctor service template -->
           </div>
           <div class="meet-doctor-button">
             <button>Meet Our Doctors</button>
@@ -640,29 +615,10 @@
 
     <!-- ========== Start equipment list ========== -->
     <section class="equipment-section no-scrollbar scroll-animation" id="equipment-section">
-      <script type="module" src="equipment.js"></script>
-      <template id="equipment-block-template">
-        <div class="equipment-block">
-          <div class="equipment-img-div">
-            <img src="assets/equipment/2.png" alt="" class="equip-img" />
-          </div>
-
-          <div class="equipment-data">
-            <h3 class="equip-heading">heading</h3>
-            <p class="equip-para">paragraph</p>
-            <a href="#equipment-section">
-              <span>Learn More</span>
-              <img src="assets/Search.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </template>
+      <!-- equipment template -->
     </section>
     <!-- ========== End equipment list ========== -->
 
-    <!-- ========== Start blog list ========== -->
-
-    <!-- ========== End blog list ========== -->
 
     <!-- ========== Start company partner customer ========== -->
 
@@ -714,7 +670,7 @@
     <!-- ========== End company partner customer ========== -->
 
     <!-- ========== Start accomplishment ========== -->
-    <section class="accomplishment-section container scroll-animation">
+    <section class="accomplishment-section container scroll-animation " id="career-section">
       <div class="head">
         <h4>Beyond Dentistry</h4>
         <h6>Mapping success in every area</h6>
@@ -874,7 +830,96 @@
   </footer>
   <!-- ========== End footer ========== -->
 
-  <script type="module" src="main.js"></script>
+
+  <!-- ========== Start templates ========== -->
+      <!-- ========== Start drop down  template========== -->
+      <template id="dropdown-template">
+        <div class="dropdown-container-wrapper ">
+          <div class="dropdown-container">
+           <div class="dropdown custom-scrollbar"></div>
+          </div>
+        </div>
+      </template>
+      <!-- ========== End drop down  template========== -->
+
+      <!-- ========== Start treatment template ========== -->
+      <template id="treatment-template">
+        <div class="treatment-box">
+          <p>treatment name</p>
+          <span>
+            <img src="assets/right-arrow.svg" alt="treatment-img" class="treatment-arrow-img" />
+          </span>
+        </div>
+      </template>
+      <!-- ========== End treatment template ========== -->
+
+      <!-- ========== Start dental issues template ========== -->
+      <template id="dental-issue-template">
+        <div class="dental-issue">
+          <div class="issue-img-wrapper">
+            <img src="" alt="" class="dental-issue-img scroll-animation" />
+          </div>
+          <p class="issue-title">Root Canal Treatment</p>
+        </div>
+      </template>
+      <!-- ========== End dental issues template ========== -->
+
+      <!-- ========== Start  people word template ========== -->
+      <template id="people-word-template">
+        <div class="people">
+          <div class="people-img-div">
+            <img src="" alt="person-img" class="people-img" />
+          </div>
+          <div class="info">
+            <p class="info-title">name</p>
+            <p class="info-treatment">treatment</p>
+          </div>
+        </div>
+      </template>
+      <!-- ========== End  people word template ========== -->
+      
+      <!-- ========== Start doctor service template ========== -->
+      <template id="service-doctor-template">
+        <div class="service-doctor">
+          <div class="doctor-img-div">
+            <img src="assets/service/1.svg" alt="" class="doctor-img" />
+          </div>
+          <div class="doctor-data">
+            <p class="doctor-name">Name</p>
+            <p class="doctor-experience">experience</p>
+          </div>
+        </div>
+      </template>
+      <!-- ========== End doctor service template ========== -->
+
+      <!-- ========== Start equipment section template ========== -->
+      <template id="equipment-block-template">
+        <div class="equipment-block">
+          <div class="equipment-img-div">
+            <img src="assets/equipment/2.png" alt="" class="equip-img" />
+          </div>
+
+          <div class="equipment-data">
+            <h3 class="equip-heading">heading</h3>
+            <p class="equip-para">paragraph</p>
+            <a href="#equipment-section">
+              <span>Learn More</span>
+              <img src="assets/Search.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </template>
+      <!-- ========== End equipment section template ========== -->
+      <!-- ========== End templates ========== -->
+      
+      <script type="module" src="dropdown.js"></script>
+      <script type="module" src="main.js"></script>
+      <script type="module" src="dentalIssue.js"></script>
+      <script type="module" src="serviceDoctor.js"></script>
+      <script type="module" src="equipment.js"></script>
+      <script type="module" src="peopleWord.js"></script>
+
+
 </body>
 
 </html>

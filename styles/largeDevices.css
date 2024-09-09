@@ -1,23 +1,23 @@
 /* 990 tp 1100 */
 @media (max-width: 1100px) {
   .container {
-    max-width: 1030px;
+    max-width: 1040px;
   }
 
   /***** header section *****/
   .header-section {
-    font-size: 0.9rem;
-    padding-block: 16px;
+    font-size: 0.95rem;
+    padding-block: 10px;
 
     .logo-img img {
       height: 30px;
-      width: 100px;
+      width: 130px;
     }
 
     .extra-btn {
       gap: 9px;
       & > div {
-        padding-inline: 4px;
+        padding-inline: 8px;
         font-size: 0.8rem;
         padding-block: 6px;
       }
@@ -38,10 +38,10 @@
   /***** main section *****/
 
   main {
-    margin-top: 67px;
+    margin-top: 55px;
     /***** banner section *****/
     .hero-banner {
-      min-height: calc(100vh - 9vh);
+      min-height: calc(100vh - 8vh);
 
       .banner {
         padding-top: 1rem;

@@ -119,6 +119,12 @@
             padding: 6px 20px;
             font-size: 1.3rem;
           }
+          #selected-concern {
+            & input {
+              min-height: 50px;
+              font-size: 1.3rem;
+            }
+          }
           .name-fieldset {
             min-height: 50px;
             legend {
