@@ -66,23 +66,16 @@
       </div>
       <ul class="menu-list custom-scrollbar">
         <li class="menu-items more-menu">
-          <div class="more-menu-item item">
+          <div class="more-menu-item item " id="treatment-menu">
             <span>Treatment</span>
             <span><img src="assets/angle-down-orange.svg" alt="" /></span>
           </div>
-          <ul class="sub-menu">
-            <li class="sub-menu-items item">sub menu item</li>
-            <li class="sub-menu-items item">sub menu item</li>
-            <li class="sub-menu-items item">sub menu item</li>
-            <li class="sub-menu-items item">sub menu item</li>
-            <li class="sub-menu-items item">sub menu item</li>
-            <li class="sub-menu-items item">sub menu item</li>
-          </ul>
+          <!-- add dynamic sub menu by js -->
         </li>
         <li class="menu-items item">Dental Plans</li>
         <li class="menu-items item doctor-nav-link">Our Doctors</li>
         <li class="menu-items item career-nav-link">Careers</li>
-        <li class="menu-items item clinic-nav-link" >Find a Clinic</li>
+        <li class="menu-items item clinic-nav-link">Find a Clinic</li>
         <li class="menu-items item book-appointment-btn" id="book-appointment-menu">
           Book Appointment
         </li>
@@ -91,10 +84,10 @@
     </div>
   </div>
   <!-- ========== End menu  ========== -->
-  
+
   <!-- ========== Start book Appointment ========== -->
   <div class="book-appointment-section stop-scroll " id="book-appointment-section">
-    
+
     <div class=" appointment-form form-1">
       <div class="close-appointment-form-btn">x</div>
       <div class="content">
@@ -127,30 +120,35 @@
           <div class="form-element">
             <input type="text" placeholder="Select City" name="city" id="">
             <span>
-              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span>
+          </div>
           <div class="form-element">
             <input type="text" placeholder="Select Clinic" name="clinic" id="">
             <span>
-              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span>
+          </div>
           <div class="form-element">
             <input type="text" placeholder="Select Date & Time" name="time" id="">
             <span>
-              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span>
+          </div>
           <div class="form-element">
             <input type="text" placeholder="Select Concern" name="concern" id="">
             <span>
-              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span></div>
+              <img src="assets/angle-down-orange.svg" alt="" class="form-icon"></span>
+          </div>
         </div>
         <div class="info">
           <input type="checkbox" name="" id="">
-          <p>I hereby consent to receive communication from Global Dental regarding my appointment and other dental services.</p>
+          <p>I hereby consent to receive communication from Global Dental regarding my appointment and other dental
+            services.</p>
         </div>
         <div class="form-submit-btn-div" id="form-submit-btn">
           <button>Submit</button>
         </div>
       </div>
     </div>
- 
+
   </div>
   <!-- ========== End book Appointment ========== -->
 
@@ -158,7 +156,7 @@
 
 
   <!-- ========== Start header ========== -->
-  <header >
+  <header>
     <div class="header-section container">
       <!-- logo -->
       <div class="logo-img">
@@ -180,18 +178,18 @@
           </li>
           <span>|</span>
 
-          <li class="link doctor-nav-link"  >
-          <!-- <li class="link"  onclick="window.scrollTo('#service-section')"> -->
+          <li class="link doctor-nav-link">
+            <!-- <li class="link"  onclick="window.scrollTo('#service-section')"> -->
             <span>Our Doctors</span>
           </li>
           <span>|</span>
-          
+
           <li class="link career-nav-link">
             <span>Careers</span>
           </li>
           <span>|</span>
 
-          <li class="link clinic-nav-link" >
+          <li class="link clinic-nav-link">
             <span>Find a Clinic</span>
           </li>
         </ul>
@@ -220,9 +218,10 @@
   <!-- ========== Start main section ========== -->
   <main>
     <!-- ========== Start hero banner section ========== -->
-    <section class="hero-banner no-scrollbar" id="hero-banner">
-      <!-- first banner -->
-      <div class="first-banner banner container">
+    <section class="hero-banner-container" >
+     <div class="hero-banner no-scrollbar" id="hero-banner">
+       <!-- first banner -->
+       <div class="first-banner banner container">
         <div class="left-hero-banner ">
           <h2>Advance Dental Health Plan</h2>
           <div>
@@ -249,24 +248,48 @@
           <img src="assets/banner1.svg" alt="" />
         </div>
       </div>
-
-      <!-- scroll tab navigation -->
-      <div class="banner-scroll-tab">
-        <div class="banner-tab active-tab"></div>
-        <div class="banner-tab"></div>
-      </div>
+        <!-- scroll tab navigation -->
+        <div class="banner-scroll-tab">
+          <div class="banner-tab active-tab"></div>
+          <div class="banner-tab"></div>
+        </div>
+     </div>
     </section>
     <!-- ========== End hero banner section ========== -->
 
-
-
-    
-
     <!-- ========== Start quick info ========== -->
     <section class="quick-info container scroll-animation" id="find-location">
-      <div class="quick-info-left">
-        <h3><span class="24x7">24x7</span><span>Patient Helpline</span></h3>
-        <p>Managed by 40+ Doctors, 5+ Languages supported</p>
+      <!-- hide show item -->
+      <div class="hide-show-animate-container">
+        <div class="hide-show-animate-item">
+          <div class="quick-info-left">
+            <h3><span class="orange-text">24x7</span><span>Patient Helpline</span></h3>
+            <p>Managed by 40+ Doctors, 5+ Languages supported</p>
+          </div>
+        </div>
+        <div class="hide-show-animate-item">
+          <div class="quick-info-left">
+            <h3><span class="orange-text">20+</span><span>No Cost EMI</span></h3>
+            <p>Across 100+ Products & Treatments</p>
+          </div>
+        </div>
+        <div class="hide-show-animate-item">
+          <div class="quick-info-left">
+            <h3><span class="orange-text">450+</span><span>World Class Clinics</span></h3>
+            <p>Managed by 1200+ specialist</p>
+          </div>
+        </div>
+        <div class="hide-show-animate-item">
+          <div class="quick-info-left">
+            <h3><span class="orange-text">Gold</span><span>Standard Treatment</span></h3>
+            <p>Only Asian Member of Royal Society of Medicine, UK</p>
+          </div>
+        </div>
+
+
+
+
+
       </div>
       <div class="quick-info-right">
         <!-- google rating -->
@@ -276,15 +299,34 @@
           </div>
           <div class="google-content">
             <div>
-              <img src="assets/star.svg" alt="" />
+              <img src="assets/star.svg" alt="star" />
               <span>4.9/5</span>
             </div>
-            <h6>1.7 Lakh+</h6>
-            <p>Verified Smiles on Google</p>
+            <!-- hide show -->
+            <div class="hide-show-animate-container">
+              <div class="hide-show-animate-item">
+                <div class="content">
+                  <h6>1.7 Lakh+</h6>
+                  <p>Verified Smiles on Google</p>
+                </div>
+              </div>
+              <div class="hide-show-animate-item">
+                <div class="content">
+                  <h6>1.5 Lakh+</h6>
+                  <p>5 Star Rating</p>
+                </div>
+              </div>
+              <div class="hide-show-animate-item">
+                <div class="content">
+                  <h6>450+ Clinics</h6>
+                  <p>Aggregated Review</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- find location -->
-        <div class="find-location" >
+        <div class="find-location">
           <div class="location-input">
             <input type="text" placeholder="select your city" name="" disabled id="lication-input-box" />
             <!-- down angle -->
@@ -307,7 +349,7 @@
         <!-- dental issue list -->
         <div class="dental-issue-list">
           <!-- dental issue template -->
-          
+
         </div>
         <!-- explore treatment -->
         <div class="explore-treatment-container">
@@ -332,12 +374,12 @@
           <form class="contact-form">
             <fieldset class="name-fieldset">
               <legend>Name</legend>
-              <input type="text" name="name" id="contact-name"  placeholder="Enter Name"/>
+              <input type="text" name="name" id="contact-name" placeholder="Enter Name" />
             </fieldset>
             <input type="number" name="number" id="contact-number" placeholder="Mobile Number" />
             <!-- dropdown -->
             <div id="select-concern">
-              <input type="text" placeholder="Select Concern" name="" disabled  />
+              <input type="text" placeholder="Select Concern" name="" disabled />
               <!-- down angle -->
               <img src="assets/angle-down-orange.svg" alt="down-angle" class="select-angle" />
             </div>
@@ -400,7 +442,7 @@
     <section class="people-word container scroll-animation">
       <h2>In their Own Words</h2>
       <div id="people-list" class="no-scrollbar">
-       <!-- people word template -->
+        <!-- people word template -->
       </div>
     </section>
     <!-- ========== End people words ========== -->
@@ -418,8 +460,18 @@
                 <img src="assets/service/1.svg" alt="" />
               </div>
               <div class="content">
-                <p>Team of Specialist</p>
-                <p><span class="content-orange">75+</span> Orthodontists</p>
+                <p class="heading">Team of Specialist</p>
+                <div class="hide-show-animate-container">
+                  <div class="hide-show-animate-item">
+                    <p class="sub-heading"><span class="content-orange">75+</span> Orthodontists</p>
+                  </div>
+                  <div class="hide-show-animate-item">
+                    <p class="sub-heading"><span class="content-orange">150+</span> Specialist</p>
+                  </div>
+                  <div class="hide-show-animate-item">
+                    <p class="sub-heading"><span class="content-orange">70+</span> Child Specialist</p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -428,8 +480,8 @@
                 <img src="assets/service/2.svg" alt="" />
               </div>
               <div class="content">
-                <p>Leading with</p>
-                <p><span class="content-orange">80%</span> women</p>
+                <p class="heading">Leading with</p>
+                <p class="sub-heading"><span class="content-orange">80%</span> women</p>
               </div>
             </div>
 
@@ -438,8 +490,8 @@
                 <img src="assets/service/3.svg" alt="" />
               </div>
               <div class="content">
-                <p>Doctors for specialized care</p>
-                <p><span class="content-orange">65%</span> MDS</p>
+                <p class="heading">Doctors for specialized care</p>
+                <p class="sub-heading"><span class="content-orange">65%</span> MDS</p>
               </div>
             </div>
           </div>
@@ -448,7 +500,7 @@
         <!-- doctors -->
         <div class="doctor-container">
           <div id="service-doctors-list" class="no-scrollbar">
-           <!-- doctor service template -->
+            <!-- doctor service template -->
           </div>
           <div class="meet-doctor-button">
             <button>Meet Our Doctors</button>
@@ -571,7 +623,8 @@
             </div>
           </div>
         </div>
-        <div class="scroll-display scroll-service-content no-scrollbar scroll-service-content-fourth service-scroll-mobile-hide">
+        <div
+          class="scroll-display scroll-service-content no-scrollbar scroll-service-content-fourth service-scroll-mobile-hide">
           <div class="scroll-service">
             <div class="service-icon">
               <img src="assets/scrollservice/1.svg" alt="" class="service-icon-img" />
@@ -618,6 +671,69 @@
       <!-- equipment template -->
     </section>
     <!-- ========== End equipment list ========== -->
+
+    <!-- ========== Start blog section ========== -->
+
+    <section class="blog-section " id="blog-section">
+      <div class="blog-section-container container">
+        <!-- heading -->
+        <h4>Journey through Knowledge: Blog Hub</h4>
+        <!-- blog tabs -->
+        <div class="blog-tabs">
+          <span class="tab active-blog-tab" id="general-dentistry-blog-tab">General Dentistry</span>
+          <span class="tab-divider">|</span>
+          <span class="tab" id="cosmetic-dentistry-blog-tab">Cosmetic Dentistry</span>
+          <span class="tab-divider">|</span>
+          <span class="tab" id="crowns-blog-tab">Crowns & Bridges</span>
+          <span class="tab-divider">|</span>
+          <span class="tab">Nutrition</span>
+          <span class="tab-divider">|</span>
+          <span class="tab">Oral Surgery</span>
+          <span class="tab-divider">|</span>
+          <span class="tab">Root Canal</span>
+          <span class="tab-divider">|</span>
+          <span class="tab">Implants & Dentures</span>
+        </div>
+
+        <div class="blog-container-wrapper">
+          <div class="blog-container no-scrollbar" id="blog-container">
+            <!-- blog  -->
+            <!-- blog template -->
+            <template id="blog-template">
+              <div class="blog-div">
+                <div class="blog-img"><img src="assets/blog/1.png" alt=""></div>
+                <div class="blog-content">
+                  <p class="blog-name">Dry Sockets Demystified: Understanding the connection to tooth extraction</p>
+                  <p class="blog-time"><span class="blog-date">12th Feb</span> | <span class="blog-duration">2 min
+                      read</span></p>
+                </div>
+              </div>
+            </template>
+
+          </div>
+        </div>
+        <!-- blog navigate -->
+        <div class="blog-navigate">
+          <!-- explore -->
+          <div class="explore-blog">
+            <img src="assets/Search.svg" alt="search-icon"> <a href="#blog-section">Explore
+              More</a>
+            <img src="assets/right-arrow.svg" alt="right arrow">
+          </div>
+          <!-- navigate sign -->
+          <div class="navigate blog-naviagte">
+            <span class="left-navigate">
+              <img src="assets/right-arrow.svg" alt="left-navigate">
+            </span>
+            <span class="right-navigate">
+              <img src="assets/right-arrow.svg" alt="right-navigate">
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End blog section ========== -->
 
 
     <!-- ========== Start company partner customer ========== -->
@@ -675,32 +791,32 @@
         <h4>Beyond Dentistry</h4>
         <h6>Mapping success in every area</h6>
       </div>
-        <div class="accomplish-list">
-          <div class="accomplish-box">
-            <div class="img-box">
-              <img src="assets/dentistry/1.png" alt="" class="accomplish-box-img" />
-            </div>
-            <p class="accomplish-box-text">Educational Videos</p>
+      <div class="accomplish-list">
+        <div class="accomplish-box">
+          <div class="img-box">
+            <img src="assets/dentistry/1.png" alt="" class="accomplish-box-img" />
           </div>
-          <div class="accomplish-box">
-            <div class="img-box">
-              <img src="assets/dentistry/2.png" alt="" class="accomplish-box-img" />
-            </div>
-            <p class="accomplish-box-text">New & Media</p>
-          </div>
-          <div class="accomplish-box">
-            <div class="img-box">
-              <img src="assets/dentistry/3.png" alt="" class="accomplish-box-img" />
-            </div>
-            <p class="accomplish-box-text">Rewards</p>
-          </div>
-          <div class="accomplish-box">
-            <div class="img-box">
-              <img src="assets/dentistry/4.png" alt="" class="accomplish-box-img" />
-            </div>
-            <p class="accomplish-box-text">Careers</p>
-          </div>
+          <p class="accomplish-box-text">Educational Videos</p>
         </div>
+        <div class="accomplish-box">
+          <div class="img-box">
+            <img src="assets/dentistry/2.png" alt="" class="accomplish-box-img" />
+          </div>
+          <p class="accomplish-box-text">New & Media</p>
+        </div>
+        <div class="accomplish-box">
+          <div class="img-box">
+            <img src="assets/dentistry/3.png" alt="" class="accomplish-box-img" />
+          </div>
+          <p class="accomplish-box-text">Rewards</p>
+        </div>
+        <div class="accomplish-box">
+          <div class="img-box">
+            <img src="assets/dentistry/4.png" alt="" class="accomplish-box-img" />
+          </div>
+          <p class="accomplish-box-text">Careers</p>
+        </div>
+      </div>
     </section>
     <!-- ========== End accomplishment ========== -->
 
@@ -832,92 +948,95 @@
 
 
   <!-- ========== Start templates ========== -->
-      <!-- ========== Start drop down  template========== -->
-      <template id="dropdown-template">
-        <div class="dropdown-container-wrapper ">
-          <div class="dropdown-container">
-           <div class="dropdown custom-scrollbar"></div>
-          </div>
-        </div>
-      </template>
-      <!-- ========== End drop down  template========== -->
+  <!-- ========== Start drop down  template========== -->
+  <template id="dropdown-template">
+    <div class="dropdown-container-wrapper ">
+      <div class="dropdown-container">
+        <div class="dropdown custom-scrollbar"></div>
+      </div>
+    </div>
+  </template>
+  <!-- ========== End drop down  template========== -->
 
-      <!-- ========== Start treatment template ========== -->
-      <template id="treatment-template">
-        <div class="treatment-box">
-          <p>treatment name</p>
-          <span>
-            <img src="assets/right-arrow.svg" alt="treatment-img" class="treatment-arrow-img" />
-          </span>
-        </div>
-      </template>
-      <!-- ========== End treatment template ========== -->
+  <!-- ========== Start treatment template ========== -->
+  <template id="treatment-template">
+    <div class="treatment-box">
+      <p>treatment name</p>
+      <span>
+        <img src="assets/right-arrow.svg" alt="treatment-img" class="treatment-arrow-img" />
+      </span>
+    </div>
+  </template>
+  <!-- ========== End treatment template ========== -->
 
-      <!-- ========== Start dental issues template ========== -->
-      <template id="dental-issue-template">
-        <div class="dental-issue">
-          <div class="issue-img-wrapper">
-            <img src="" alt="" class="dental-issue-img scroll-animation" />
-          </div>
-          <p class="issue-title">Root Canal Treatment</p>
-        </div>
-      </template>
-      <!-- ========== End dental issues template ========== -->
+  <!-- ========== Start dental issues template ========== -->
+  <template id="dental-issue-template">
+    <div class="dental-issue">
+      <div class="issue-img-wrapper">
+        <img src="" alt="" class="dental-issue-img scroll-animation" />
+      </div>
+      <p class="issue-title">Root Canal Treatment</p>
+    </div>
+  </template>
+  <!-- ========== End dental issues template ========== -->
 
-      <!-- ========== Start  people word template ========== -->
-      <template id="people-word-template">
-        <div class="people">
-          <div class="people-img-div">
-            <img src="" alt="person-img" class="people-img" />
-          </div>
-          <div class="info">
-            <p class="info-title">name</p>
-            <p class="info-treatment">treatment</p>
-          </div>
-        </div>
-      </template>
-      <!-- ========== End  people word template ========== -->
-      
-      <!-- ========== Start doctor service template ========== -->
-      <template id="service-doctor-template">
-        <div class="service-doctor">
-          <div class="doctor-img-div">
-            <img src="assets/service/1.svg" alt="" class="doctor-img" />
-          </div>
-          <div class="doctor-data">
-            <p class="doctor-name">Name</p>
-            <p class="doctor-experience">experience</p>
-          </div>
-        </div>
-      </template>
-      <!-- ========== End doctor service template ========== -->
+  <!-- ========== Start  people word template ========== -->
+  <template id="people-word-template">
+    <div class="people">
+      <div class="people-img-div">
+        <img src="" alt="person-img" class="people-img" />
+      </div>
+      <div class="info">
+        <p class="info-title">name</p>
+        <p class="info-treatment">treatment</p>
+      </div>
+    </div>
+  </template>
+  <!-- ========== End  people word template ========== -->
 
-      <!-- ========== Start equipment section template ========== -->
-      <template id="equipment-block-template">
-        <div class="equipment-block">
-          <div class="equipment-img-div">
-            <img src="assets/equipment/2.png" alt="" class="equip-img" />
-          </div>
+  <!-- ========== Start doctor service template ========== -->
+  <template id="service-doctor-template">
+    <div class="service-doctor">
+      <div class="doctor-img-div">
+        <img src="assets/service/1.svg" alt="" class="doctor-img" />
+      </div>
+      <div class="doctor-data">
+        <p class="doctor-name">Name</p>
+        <p class="doctor-experience">experience</p>
+      </div>
+    </div>
+  </template>
+  <!-- ========== End doctor service template ========== -->
 
-          <div class="equipment-data">
-            <h3 class="equip-heading">heading</h3>
-            <p class="equip-para">paragraph</p>
-            <a href="#equipment-section">
-              <span>Learn More</span>
-              <img src="assets/Search.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </template>
-      <!-- ========== End equipment section template ========== -->
-      <!-- ========== End templates ========== -->
-      
-      <script type="module" src="dropdown.js"></script>
-      <script type="module" src="main.js"></script>
-      <script type="module" src="dentalIssue.js"></script>
-      <script type="module" src="serviceDoctor.js"></script>
-      <script type="module" src="equipment.js"></script>
-      <script type="module" src="peopleWord.js"></script>
+  <!-- ========== Start equipment section template ========== -->
+  <template id="equipment-block-template">
+    <div class="equipment-block">
+      <div class="equipment-img-div">
+        <img src="assets/equipment/2.png" alt="" class="equip-img" />
+      </div>
+
+      <div class="equipment-data">
+        <h3 class="equip-heading">heading</h3>
+        <p class="equip-para">paragraph</p>
+        <a href="#equipment-section">
+          <span>Learn More</span>
+          <img src="assets/Search.svg" alt="" />
+        </a>
+      </div>
+    </div>
+  </template>
+  <!-- ========== End equipment section template ========== -->
+  <!-- ========== End templates ========== -->
+
+  <script type="module" src="dropdown.js"></script>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="dentalIssue.js"></script>
+  <script type="module" src="serviceDoctor.js"></script>
+  <script type="module" src="equipment.js"></script>
+  <script type="module" src="peopleWord.js"></script>
+  <script type="module" src="peopleWord.js"></script>
+  <script type="module" src="blog.js"></script>
+  <script type="module" src="hideshowanimate.js"></script>
 
 
 </body>

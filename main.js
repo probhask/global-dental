@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // treatment block show and hide
 treatmentNavLink.addEventListener("click", (e) => {
   e.stopPropagation();
-  toggleSelectVisibility(treatmentSection, "block");
+  toggleSelectVisibility(treatmentSection, "grid");
 });
 
 ////////////////////////////////////////////////////////////////
@@ -147,6 +147,18 @@ const menuContainerWrapper = document.querySelector(".menu-container-wrapper");
 const menuContainer = document.querySelector(".menu-container");
 const menuBtn = document.querySelector("#menu-icon-btn");
 const menuCloseBtn = document.querySelector(".close-menu");
+
+// treatment menu
+const treatmentMenu = document.querySelector("#treatment-menu");
+const treatmentSubMenuContainer = document.createElement("ul");
+treatmentSubMenuContainer.classList.add("sub-menu");
+treatmentList.forEach((item) => {
+  const itemElement = document.createElement("li");
+  itemElement.textContent = item;
+  itemElement.classList.add("sub-menu-items", "item");
+  treatmentSubMenuContainer.append(itemElement);
+});
+treatmentMenu.insertAdjacentElement("afterend", treatmentSubMenuContainer);
 
 function showMenu() {
   menuContainerWrapper.style.display = "flex";

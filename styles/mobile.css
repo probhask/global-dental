@@ -152,8 +152,6 @@
   main {
     /***** hero banner *****/
     .hero-banner {
-      min-height: calc(100vh - 55px);
-
       & .banner {
         align-items: flex-end;
         min-height: 100%;
@@ -161,6 +159,11 @@
           max-width: 100%;
           & h2 {
             font-size: 2.5rem;
+          }
+
+          .buy-now {
+            width: clamp(11rem, 13rem, 15rem);
+            padding-block: 8px;
           }
         }
         & div:first-of-type {
@@ -177,10 +180,6 @@
           object-fit: cover;
           mix-blend-mode: unset;
         }
-        .buy-now {
-          width: clamp(11rem, 13rem, 15rem);
-          padding-block: 8px;
-        }
       }
       .banner-scroll-tab {
         display: none;
@@ -190,7 +189,31 @@
 
     /***** quick info *****/
     .quick-info {
+      & .quick-info-left {
+        height: 100px;
+      }
       & .quick-info-right {
+        & .google-rating {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          & .google-icon {
+            justify-content: center;
+
+            img {
+              width: 3.5rem;
+            }
+          }
+
+          .google-content {
+            & > div:first-of-type {
+              justify-content: center;
+            }
+          }
+        }
+
         & .find-location {
           button {
             height: auto;
@@ -200,275 +223,211 @@
     }
     /***** End quick info *****/
 
-    /***** dental issue *****/
-    .dental-issue-container {
-      padding-block: 30px;
-      padding-inline: 20px;
+    .treatment-container {
+      /***** dental issue *****/
+      .dental-issue-container {
+        padding-block: 30px;
+        padding-inline: 20px;
 
-      & > p:first-of-type {
-        font-size: 1.5rem;
-      }
-
-      .dental-issue-list {
-        grid-template-columns: repeat(auto-fit, 150px);
-        row-gap: 20px;
-        column-gap: 10px;
-      }
-      .dental-issue {
-        height: 120px;
-        .issue-img-wrapper {
-          & img {
-            width: 70px;
-            height: 50px;
-          }
-        }
-        .issue-title {
-          font-size: 1rem;
-          font-weight: 500;
-        }
-      }
-
-      border-radius: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      -ms-border-radius: 0;
-      -o-border-radius: 0;
-    }
-    /***** End dental issue *****/
-
-    /***** grid info section *****/
-    .grid-extra-container {
-      .contact-grid {
-        padding: 1rem 1rem;
-        width: 100%;
-        min-width: 100%;
-
-        .heading {
-          margin-bottom: 30px;
-          text-align: center;
-
-          h3 {
-            font-size: 1.5rem;
-          }
+        & > p:first-of-type {
+          font-size: 1.5rem;
         }
 
-        .contact-form {
-          font-size: 1.3rem;
-
-          & > * {
-            min-height: 50px;
-            font-size: 1.1rem;
-            padding: 6px 20px;
-          }
-          #selected-concern {
-            height: 50px;
-            & input {
-              min-height: 35px;
-              font-size: 1.1rem;
+        .dental-issue-list {
+          grid-template-columns: repeat(auto-fit, 150px);
+          row-gap: 20px;
+          column-gap: 10px;
+        }
+        .dental-issue {
+          height: 120px;
+          .issue-img-wrapper {
+            & img {
+              width: 70px;
+              height: 50px;
             }
           }
-          .name-fieldset {
-            min-height: 35px;
-            legend {
-              margin-left: 0rem;
-            }
-            input {
-              font-size: 1rem;
-              height: 22px;
-            }
-          }
-          button {
-            max-width: max-content;
+          .issue-title {
+            font-size: 1rem;
+            font-weight: 500;
           }
         }
+
         border-radius: 0;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
       }
-      .appreciation-grid {
-        gap: 20px;
-        width: 100%;
-        & .safety-protocol {
-          min-height: 270px;
-          & .protocol-content {
-            padding-left: 10px;
-            flex-grow: 1;
+      /***** End dental issue *****/
 
-            & div:first-of-type {
-              & > div {
-                & p {
-                  font-weight: 300;
-                }
-              }
-            }
+      /***** grid info section *****/
+      .grid-extra-container {
+        .contact-grid {
+          padding: 1rem 1rem;
+          width: 100%;
+          min-width: 100%;
 
-            border-radius: 0;
-            -webkit-border-radius: 0;
-            -moz-border-radius: 0;
-            -ms-border-radius: 0;
-            -o-border-radius: 0;
-          }
-          & .protocol-img {
-            align-self: flex-end;
-            img {
-              max-height: 230px;
-            }
-          }
-        }
-        .bottom-safety-protocol {
-          gap: 20px;
-          flex-direction: column;
-          & > div {
-            min-height: 230px;
+          .heading {
+            margin-bottom: 30px;
+            text-align: center;
 
-            .bottom-safety-img img {
-              height: 55px;
-              width: 55px;
-            }
-
-            border-radius: 0;
-            -webkit-border-radius: 0;
-            -moz-border-radius: 0;
-            -ms-border-radius: 0;
-            -o-border-radius: 0;
-          }
-        }
-      }
-      /***** End grid info section *****/
-
-      /***** service section *****/
-      .service-section {
-        .service-section-container {
-          padding-block: 25px;
-          padding-inline: 8px;
-          .service-first-box {
-            font-size: 1rem;
-
-            & > h5 {
+            h3 {
               font-size: 1.5rem;
-              margin-bottom: 40px;
-              line-height: 1.8rem;
-              text-align: center;
             }
-            & .appreciate {
-              & .icon {
-                margin-right: 20px;
+          }
 
-                & img {
-                  width: 40px;
-                  height: 40px;
-                }
-              }
-              & .content {
-                & p:first-of-type {
-                  font-size: 1.1rem;
-                  line-height: 1.5rem;
-                }
-                & p:last-of-type {
-                  font-size: 0.9rem;
-                }
+          .contact-form {
+            font-size: 1.3rem;
+
+            & > * {
+              min-height: 50px;
+              font-size: 1.1rem;
+              padding: 6px 20px;
+            }
+            #selected-concern {
+              height: 50px;
+              & input {
+                min-height: 35px;
+                font-size: 1.1rem;
               }
             }
-          }
-        }
-        .service-scroll-mobile-hide {
-          display: none;
-        }
-      }
-      /***** End service section *****/
-
-      /***** equipment section *****/
-      & .equipment-section {
-        & .equipment-block {
-          .equipment-img-div {
-            width: clamp(300px, 400px, 500px);
-            height: 300px;
-          }
-        }
-
-        & .equipment-data {
-          max-width: 80%;
-          height: clamp(40%, 40%, 60%);
-          min-height: 50%;
-          padding-block: 4px;
-          padding-inline: 10px;
-          top: 70%;
-          & > h3 {
-            font-size: 1.7rem;
-            font-weight: 600;
-            line-height: 1.7rem;
-            margin-bottom: 8px;
-          }
-          & > p {
-            font-size: 1rem;
-          }
-          & > a {
-            font-size: 0.9rem;
-            & > img {
-              width: 12px;
-              height: 12px;
+            .name-fieldset {
+              min-height: 35px;
+              legend {
+                margin-left: 0rem;
+              }
+              input {
+                font-size: 1rem;
+                height: 22px;
+              }
+            }
+            button {
+              max-width: max-content;
             }
           }
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
         }
-      }
-      /***** End equipment section *****/
+        .appreciation-grid {
+          gap: 20px;
+          width: 100%;
+          & .safety-protocol {
+            min-height: 270px;
+            & .protocol-content {
+              padding-left: 10px;
+              flex-grow: 1;
 
-      /***** partner trusted brands section *****/
-      .partner-section {
-        margin-bottom: 12rem;
-        .partners-greeting-bg-img {
-          max-height: 300px;
-          & > img {
-            height: 300px;
-          }
-        }
-        .brand-div {
-          padding-inline: 0.9rem;
-          padding-block: 1rem;
-          width: 80%;
-          bottom: -40%;
+              & div:first-of-type {
+                & > div {
+                  & p {
+                    font-weight: 300;
+                  }
+                }
+              }
 
-          .brand-content {
-            h4 {
-              font-size: 2.2rem;
-              line-height: 2.2rem;
-              margin-bottom: 2px;
+              border-radius: 0;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              -ms-border-radius: 0;
+              -o-border-radius: 0;
             }
-            h6 {
-              font-size: 1.2rem;
-              margin-bottom: 12px;
-            }
-            p {
-              font-size: 0.8rem;
-            }
-          }
-
-          .brand-list-container {
-            margin-block: 0px;
-            margin-bottom: 15px;
-
-            .brand-list {
-              width: (200px, 200px, 200px);
-              & > img {
-                width: 200px;
-                height: 30px;
+            & .protocol-img {
+              align-self: flex-end;
+              img {
+                max-height: 230px;
               }
             }
           }
+          .bottom-safety-protocol {
+            gap: 20px;
+            flex-direction: column;
+            & > div {
+              min-height: 230px;
 
-          .brand-explore {
-            gap: 18px;
+              .bottom-safety-img img {
+                height: 55px;
+                width: 55px;
+              }
 
-            & > button:first-child {
-              font-size: 0.9rem;
-              padding-inline: 1.8rem;
-              padding-block: 0.4rem;
+              border-radius: 0;
+              -webkit-border-radius: 0;
+              -moz-border-radius: 0;
+              -ms-border-radius: 0;
+              -o-border-radius: 0;
+            }
+          }
+        }
+        /***** End grid info section *****/
+
+        /***** service section *****/
+        /* .service-section {
+          .service-section-container {
+            padding-block: 25px;
+            padding-inline: 8px;
+
+            & .service-first-box {
+              font-size: 1rem;
+
+              & > h5 {
+                font-size: 89rem;
+                margin-bottom: 40px;
+                line-height: 1.8rem;
+                text-align: center;
+              }
+              & .appreciate {
+                & .icon {
+                  margin-right: 20px;
+
+                  & img {
+                    width: 40px;
+                    height: 40px;
+                  }
+                }
+                & .content {
+                  & > .heading {
+                    font-size: 1.1rem;
+                    line-height: 1.5rem;
+                  }
+                  & .sub-heading {
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+            }
+          }
+        } */
+        /***** End service section *****/
+
+        /***** equipment section *****/
+        & .equipment-section {
+          & .equipment-block {
+            .equipment-img-div {
+              width: clamp(300px, 400px, 500px);
+              height: 300px;
+            }
+          }
+
+          & .equipment-data {
+            max-width: 80%;
+            height: clamp(40%, 40%, 60%);
+            min-height: 50%;
+            padding-block: 4px;
+            padding-inline: 10px;
+            top: 70%;
+            & > h3 {
+              font-size: 1.7rem;
+              font-weight: 600;
+              line-height: 1.7rem;
+              margin-bottom: 8px;
+            }
+            & > p {
+              font-size: 1rem;
             }
             & > a {
               font-size: 0.9rem;
-
               & > img {
                 width: 12px;
                 height: 12px;
@@ -476,71 +435,135 @@
             }
           }
         }
-      }
-      /***** End partner trusted brands section *****/
+        /***** End equipment section *****/
 
-      /***** accomplish beyond dentistry section *****/
-      .accomplishment-section {
-        padding-block: 2rem;
-        padding-inline: 1rem;
-
-        .head {
-          margin-bottom: 2rem;
-          text-align: center;
-          & > h4 {
-            font-size: 1.6rem;
-            margin-bottom: 7px;
+        /***** partner trusted brands section *****/
+        & .partner-section {
+          margin-bottom: 12rem;
+          .partners-greeting-bg-img {
+            max-height: 300px;
+            & > img {
+              height: 300px;
+            }
           }
-          & > h6 {
-            font-size: 1.1rem;
-          }
-        }
+          .brand-div {
+            padding-inline: 0.9rem;
+            padding-block: 1rem;
+            width: 80%;
+            bottom: -40%;
 
-        .accomplish-list {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          justify-content: flex-start;
-          gap: 10px;
-          width: 100%;
-          position: relative;
+            .brand-content {
+              h4 {
+                font-size: 2.2rem;
+                line-height: 2.2rem;
+                margin-bottom: 2px;
+              }
+              h6 {
+                font-size: 1.2rem;
+                margin-bottom: 12px;
+              }
+              p {
+                font-size: 0.8rem;
+              }
+            }
 
-          .accomplish-box {
-            width: clamp(100%, 100%, 100%);
-            height: clamp(130px, 130px, 130px);
-            font-size: 1rem;
+            .brand-list-container {
+              margin-block: 0px;
+              margin-bottom: 15px;
 
-            .img-box {
-              img {
-                width: clamp(60px, 60px, 60px);
+              .brand-list {
+                width: (200px, 200px, 200px);
+                & > img {
+                  width: 200px;
+                  height: 30px;
+                }
+              }
+            }
+
+            .brand-explore {
+              gap: 18px;
+
+              & > button:first-child {
+                font-size: 0.9rem;
+                padding-inline: 1.8rem;
+                padding-block: 0.4rem;
+              }
+              & > a {
+                font-size: 0.9rem;
+
+                & > img {
+                  width: 12px;
+                  height: 12px;
+                }
               }
             }
           }
         }
+        /***** End partner trusted brands section *****/
 
-        border-radius: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
-      }
-      /***** End accomplish beyond dentistry section *****/
+        /***** accomplish beyond dentistry section *****/
+        .accomplishment-section {
+          padding-block: 2rem;
+          padding-inline: 1rem;
 
-      /***** faq section *****/
-      .faq-section {
-        h4 {
-          margin-bottom: 2rem;
-          padding-inline: 0.5rem;
+          .head {
+            margin-bottom: 2rem;
+            text-align: center;
+            & > h4 {
+              font-size: 1.6rem;
+              margin-bottom: 7px;
+            }
+            & > h6 {
+              font-size: 1.1rem;
+            }
+          }
+
+          .accomplish-list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            width: 100%;
+            position: relative;
+
+            .accomplish-box {
+              width: clamp(100%, 100%, 100%);
+              height: clamp(130px, 130px, 130px);
+              font-size: 1rem;
+
+              .img-box {
+                img {
+                  width: clamp(60px, 60px, 60px);
+                }
+              }
+            }
+          }
+
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
         }
-        .faq-container {
-          columns: 1;
-          font-size: 1rem;
-          padding-inline: 0.5rem;
+        /***** End accomplish beyond dentistry section *****/
+
+        /***** faq section *****/
+        .faq-section {
+          h4 {
+            margin-bottom: 2rem;
+            padding-inline: 0.5rem;
+          }
+          .faq-container {
+            columns: 1;
+            font-size: 1rem;
+            padding-inline: 0.5rem;
+          }
         }
+        /***** End faq section *****/
       }
-      /***** End faq section *****/
+      /*****end grid info section *****/
     }
-
     /***** service section *****/
     .service-section {
       .service-section-container {
@@ -550,7 +573,7 @@
         & .service-first-box {
           h5 {
             text-align: center;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             margin-bottom: 40px;
           }
           & .appreciate-box {
@@ -566,11 +589,11 @@
                 }
               }
               & .content {
-                & p:first-of-type {
+                & .heading {
                   font-size: 1.1rem;
                   line-height: 1.5rem;
                 }
-                & p:last-of-type {
+                & .sub-heading {
                   font-size: 0.9rem;
                 }
               }
@@ -617,6 +640,65 @@
       }
     }
     /***** End equipment-section *****/
+
+    /***** blog section *****/
+    .blog-section {
+      .blog-section-container {
+        h4 {
+          font-size: 1.3rem;
+          font-weight: 800;
+        }
+        /* blog tabs */
+        .blog-tabs {
+          font-size: 1rem;
+          line-height: 1rem;
+          row-gap: 7px;
+
+          .tab-divider {
+            font-size: 1.1rem;
+          }
+        }
+        /* blog container */
+        .blog-container-wrapper {
+          padding-left: 5%;
+          .blog-container {
+            .blog-list-box {
+              column-gap: 13px;
+              row-gap: 17px;
+              grid-template-columns: repeat(1, 1fr);
+
+              /* blog */
+              .blog-div {
+                max-width: 95%;
+
+                .blog-img {
+                  width: 120px;
+                  height: 80px;
+                }
+              }
+            }
+          }
+        }
+
+        .blog-navigate {
+          flex-direction: column-reverse;
+          align-items: center;
+          row-gap: 20px;
+
+          .explore-blog {
+            column-gap: 7px;
+            a {
+              font-size: 0.95rem;
+            }
+            img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+    }
+    /***** End blog section *****/
 
     /***** company partner  *****/
     .partner-section {

@@ -72,6 +72,15 @@
       }
     }
   }
+  .help-contact-section {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
   header {
     .header-section {
       nav,
@@ -167,6 +176,77 @@
         -ms-border-radius: 20px;
         -o-border-radius: 20px;
       }
-    } /***** End grid info section *****/
+    }
+    /***** End grid info section *****/
+
+    /***** blog section *****/
+    .blog-section {
+      .blog-section-container {
+        h4 {
+          font-size: 2.3rem;
+        }
+        /* blog tabs */
+        .blog-tabs {
+          font-size: 1.1rem;
+          line-height: 1.2rem;
+          row-gap: 12px;
+
+          .tab-divider {
+            font-size: 1.3rem;
+          }
+        }
+        /* blog container */
+        .blog-container-wrapper {
+          .blog-container {
+            .blog-list-box {
+              column-gap: 13px;
+              row-gap: 50px;
+              grid-template-columns: repeat(2, 1fr);
+
+              /* blog */
+              .blog-div {
+                max-width: 400px;
+
+                .blog-img {
+                  width: 190px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /***** End blog section *****/
+
+    /***** accomplishment section *****/
+    .accomplishment-section {
+      padding-block: 2rem;
+      padding-inline: 2rem;
+
+      .head {
+        margin-bottom: 2rem;
+      }
+      & .accomplish-list {
+        .accomplish-box {
+          width: clamp(200px, 200px, 200px);
+          height: clamp(130px, 130px, 130px);
+
+          font-size: 1rem;
+
+          & .img-box {
+            img {
+              height: 40px;
+            }
+          }
+        }
+      }
+
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    /***** End accomplishment section *****/
   }
 }

@@ -35,14 +35,30 @@
   }
   /***** End header section *****/
 
+  /***** treatment section *****/
+  #treatment-section {
+    width: 700px;
+    font-size: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    & > div {
+      padding-inline: 7px;
+      padding-block: 10px;
+      max-width: 300px;
+    }
+    .treatment-btn button {
+      font-size: 1rem;
+      padding-block: 5px;
+    }
+  }
+  /***** End treatment section *****/
+
   /***** main section *****/
 
   main {
     margin-top: 55px;
     /***** banner section *****/
     .hero-banner {
-      min-height: calc(100vh - 8vh);
-
       .banner {
         padding-top: 1rem;
         padding: 20px;
@@ -93,8 +109,12 @@
         align-items: center;
         padding-inline: 30px;
 
-        .google-rating {
-          justify-content: center;
+        & .google-rating {
+          .google-icon {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+          }
         }
 
         .find-location {
@@ -128,10 +148,10 @@
     /***** service section *****/
     .service-section {
       .service-section-container {
-        padding-left: 2rem;
+        padding-left: 1rem;
         .service-first-box {
           h5 {
-            margin-bottom: 50px;
+            margin-bottom: 40px;
           }
           .appreciate {
             &:not(:last-child) {
@@ -177,6 +197,36 @@
       }
     }
     /***** End equipment *****/
+
+    /***** blog section *****/
+    .blog-section {
+      .blog-section-container {
+        /* blog container */
+        .blog-container-wrapper {
+          .blog-container {
+            .blog-list-box {
+              column-gap: 10px;
+              row-gap: 40px;
+
+              /* blog */
+              .blog-div {
+                max-width: 320px;
+                .blog-img {
+                  width: 190px;
+                }
+                .blog-content {
+                  .blog-name {
+                    font-size: 1rem;
+                    line-height: 1.1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    /***** End blog section *****/
 
     /***** company partner  *****/
     .partner-section {
