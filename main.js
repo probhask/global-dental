@@ -1,6 +1,8 @@
 import { treatmentList } from "./db/treatmentList.js";
 
 ////////////////////////////////////////////////////////////////
+// dropdown element
+const dropDowns = document.querySelectorAll(".dropdown-container-wrapper");
 // scroll banner declaration
 const heroBanner = document.getElementById("hero-banner");
 const scrollTabContainer = document.querySelector(".banner-scroll-tab");
@@ -196,75 +198,70 @@ window.addEventListener("resize", () => {
   }
 });
 ////////////////////////////////////////////////////////////////////////////
-
-// ///////////////////////////////////////////////////////////////
-//section outside click close////////////////////////////
-// dropdown element
-const dropDowns = document.querySelectorAll(".dropdown-container-wrapper");
-// detect Outside Click function
-function detectOutsideClick(e, element) {
-  // console.log(element, element.contains(e.target));
-
-  return element.contains(e.target);
-  console.log(element.contains(e.target));
-}
-// add event listeners on outside click
-window.addEventListener("click", (e) => {
-  // treatment section
-  if (!detectOutsideClick(e, treatmentSection)) {
-    treatmentSection.style.display = "none";
-  }
-  // help contact section
-  if (!detectOutsideClick(e, helpContactSection)) {
-    helpContactSection.style.display = "none";
-  }
-  // appointment section
-  // if (!detectOutsideClick(e, appointmentForm1)) {
-  //   console.log("book1");
-
-  //   bookAppointmentSection.style.display = "none";
-  // }
-  // if (
-  //   // bookAppointmentSection.style.display !== "none" &&
-  //   !detectOutsideClick(e, appointmentForm2)
-  // ) {
-  //   console.log("book2");
-
-  //   bookAppointmentSection.style.display = "none";
-  // }
-  // menu
-  if (!detectOutsideClick(e, menuContainer)) {
-    hideMenu();
-  }
-  //dropdowns
-  dropDowns.forEach((dropDown) => {
-    if (!detectOutsideClick(e, dropDown)) {
-      dropDown.style.display = "none";
-    }
-  });
-});
-////////////////////////////////////////////////////////////////
-
 ////////////////////////////////////////////////////////////////
 // toggle Selected element  Visibility
 const toggleSelectVisibility = (selectionToToggleElement, display) => {
   // other element hide
-  treatmentSection.style.display = "none";
-  helpContactSection.style.display = "none";
-  bookAppointmentSection.style.display = "none";
-  menuContainerWrapper.style.display = "none";
+  if (selectionToToggleElement !== treatmentSection) {
+    treatmentSection.style.display = "none";
+  }
+  if (selectionToToggleElement !== helpContactSection) {
+    helpContactSection.style.display = "none";
+  }
+  if (selectionToToggleElement !== bookAppointmentSection) {
+    bookAppointmentSection.style.display = "none";
+  }
+  if (selectionToToggleElement !== menuContainerWrapper) {
+    menuContainerWrapper.style.display = "none";
+  }
   //dropdowns hide
   dropDowns.forEach((dropDown) => {
     dropDown.style.display = "none";
   });
 
   // toggle element
-  if (selectionToToggleElement.style.display === "none") {
+  if (
+    selectionToToggleElement.style.display === "none" ||
+    !selectionToToggleElement.style.display
+  ) {
     selectionToToggleElement.style.display = display;
   } else {
     selectionToToggleElement.style.display = "none";
   }
 };
+////////////////////////////////////////////////////////////////
+
+// ///////////////////////////////////////////////////////////////
+//section outside click close////////////////////////////
+
+// detect Outside Click function
+function detectOutsideClick(e, element) {
+  // console.log(element, element.contains(e.target));
+
+  return !element.contains(e.target);
+  console.log(element.contains(e.target));
+}
+// add event listeners on outside click
+window.addEventListener("click", (e) => {
+  // treatment section
+  if (detectOutsideClick(e, treatmentSection)) {
+    treatmentSection.style.display = "none";
+  }
+  // help contact section
+  if (detectOutsideClick(e, helpContactSection)) {
+    helpContactSection.style.display = "none";
+  }
+  // menu
+  if (detectOutsideClick(e, menuContainer)) {
+    hideMenu();
+  }
+  //dropdowns
+  dropDowns.forEach((dropDown) => {
+    if (detectOutsideClick(e, dropDown)) {
+      dropDown.style.display = "none";
+    }
+  });
+});
 ////////////////////////////////////////////////////////////////
 
 ////////////////////////////////////////////////////////////////
